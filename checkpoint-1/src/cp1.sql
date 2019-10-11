@@ -3,9 +3,7 @@
 -- Time permitting: What categories of allegations are changed the most?
 
 
--- this will get us started
-select * from data_allegation da, data_officerallegation doa,
-data_allegationcategory dac
-where dac.id = doa.allegation_category_id
-and da.id = doa.allegation_id
---and crid like '%1055917%'
+select * from data_allegation da, case_info_08282018 ca, data_officerallegation doa, data_allegationcategory dac
+where da.crid = ca.log_no
+and doa.allegation_id = da.id
+and dac.id = doa.allegation_category_id
