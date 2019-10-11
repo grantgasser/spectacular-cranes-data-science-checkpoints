@@ -25,10 +25,10 @@ We were able to get the data from Prof. Rogers and below are the instructons to 
 create table if not exists case_info_08282018
 (
 	log_no varchar,
-	incident_fromdate timestamp,
-	incident_todate timestamp,
-	complaint_date timestamp,
-	closedatcopa_datetime timestamp,
+	incident_fromdate varchar,
+	incident_todate varchar,
+	complaint_date varchar,
+	closedatcopa_datetime varchar,
 	current_status varchar,
 	location_code varchar,
 	street_no varchar,
