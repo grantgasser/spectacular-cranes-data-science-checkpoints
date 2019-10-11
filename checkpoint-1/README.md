@@ -20,6 +20,7 @@
 Since our project theme involves identifying the change in allegation information as compared to the current version of the information, we needed data from old versions of case data. 
 We were able to get the data from Prof. Rogers and below are the instructons to load data from .csv files into the cpdb database. We created table with below DDL script :
 
+```
 create table if not exists case_info_08282018
 (
 	log_no varchar,
@@ -48,9 +49,11 @@ create table if not exists case_info_08282018
 			primary key
 );
 alter table case_info_08282018 owner to postgres;
-
+```
 
 Since now we have the table lets load data into it from the cvs file:
+
+````
 COPY case_info_08282018(log_no,
 incident_fromdate,
 incident_todate,
@@ -72,6 +75,7 @@ police_shooting,
 complainant_type,
 investigating_agency) 
 FROM "/Users/sundar/Downloads/08_28_2018_case_info.csv" DELIMITER ',' CSV HEADER;
+```
 
 ### Run the follow SQL files
 * cp1.sql
