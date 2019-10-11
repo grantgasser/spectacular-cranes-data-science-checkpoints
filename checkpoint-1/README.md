@@ -17,11 +17,61 @@
 ## Steps for execution
 
 ### Import old data set (Instructions)
-* Provided by Rajiv Sinclair from the Invisible Institute.
-* Do this
-* Do that...
-* Run
-`<insert command here if necessary>`
+Since our project theme involves identifying the change in allegation information as compared to the current version of the information, we needed data from old versions of case data. 
+We were able to get the data from Prof. Rogers and below are the instructons to load data from .csv files into the cpdb database. We created table with below DDL script :
+
+create table if not exists case_info_08282018
+(
+	log_no varchar,
+	incident_fromdate timestamp,
+	incident_todate timestamp,
+	complaint_date timestamp,
+	closedatcopa_datetime timestamp,
+	current_status varchar,
+	location_code varchar,
+	street_no varchar,
+	street_direction varchar,
+	street_nme varchar,
+	apt_no varchar,
+	city varchar,
+	state varchar,
+	zip_cd varchar,
+	occurance_beat integer,
+	current_category_code varchar,
+	current_category varchar,
+	current_category_type varchar,
+	police_shooting varchar,
+	complainant_type varchar,
+	investigating_agency varchar,
+	id serial not null
+		constraint case_info_08282018_pk
+			primary key
+);
+alter table case_info_08282018 owner to postgres;
+
+
+Since now we have the table lets load data into it from the cvs file:
+COPY case_info_08282018(log_no,
+incident_fromdate,
+incident_todate,
+complaint_date,
+closedatcopa_datetime,
+current_status,
+location_code,
+street_no,
+street_direction,
+street_nme,
+apt_no,
+city,
+state	zip_cd,
+occurance_beat,
+current_category_code,
+current_category,
+current_category_type,
+police_shooting,
+complainant_type,
+investigating_agency) 
+FROM "/Users/sundar/Downloads/08_28_2018_case_info.csv" DELIMITER ',' CSV HEADER;
 
 ### Run the follow SQL files
 * cp1.sql
