@@ -7,7 +7,7 @@
 * Time permitting: what categories of allegations are changed the most?
 2. Which investigators/administrators most often changed the category of allegation (e.g. “Sexual assault” => “Illegal Search and Seizure”)
 3. What data attributes are changed the most? (e.g. category of the allegation, or officers involved, etc)
-4. How do changes in the allegation type affect officer behavior? (e.g. If an officer’s allegations are being changed to a less severe type of allegation, are they more likely to continue receiving more complaints because they believe they can get away with it.)
+4. How often do changes in allegations happen?
 
 ## Answers based on queries
 * File: **cp1.sql**. After running this query, we found...
