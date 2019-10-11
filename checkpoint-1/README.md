@@ -51,7 +51,7 @@ create table if not exists case_info_08282018
 alter table case_info_08282018 owner to postgres;
 ```
 
-Since now we have the table lets load data into it from the cvs file:
+Since now we have the table lets load data into it from the csv file:
 
 ```
 COPY case_info_08282018(log_no,
