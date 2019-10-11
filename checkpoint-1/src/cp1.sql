@@ -1,5 +1,6 @@
 -- Checkpoint 1, Question 1
--- What categories of allegations are changed the most?
+-- Which allegations have changed?
+-- Time permitting: What categories of allegations are changed the most?
 
 
 -- this will get us started
