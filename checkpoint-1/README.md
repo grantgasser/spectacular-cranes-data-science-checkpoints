@@ -4,7 +4,7 @@
 
 ## Our Questions
 1. What allegations have changed?
-* Time permitting: what categories of allegations are changed the most?
+	* Time permitting: what categories of allegations are changed the most?
 2. Which investigators/administrators most often changed the category of allegation (e.g. “Sexual assault” => “Illegal Search and Seizure”)
 3. What data attributes are changed the most? (e.g. category of the allegation, or officers involved, etc)
 4. How often do changes in allegations happen?
