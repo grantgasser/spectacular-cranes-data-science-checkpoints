@@ -1,6 +1,6 @@
 # Checkpoint 1
 * Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious)
-  * This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `case` to be the most useful for answering these questions.
+  * This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
 
 ## Our Questions
 1. What allegations have changed?
