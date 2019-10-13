@@ -78,6 +78,7 @@ complainant_type,
 investigating_agency) 
 FROM "/Users/sundar/Downloads/08_28_2018_case_info.csv" DELIMITER ',' CSV HEADER;
 ```
+**NOTE** that your file path will be different on the last line ^
 
 ### Run the follow SQL files
 * cp1.sql
