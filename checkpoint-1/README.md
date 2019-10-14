@@ -2,12 +2,13 @@
 * Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious)
   * This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
 
-## Our Questions from the Proposal
-1. What allegations have changed?
+## Our Questions from the Proposal (altered a bit)
+1. Can we acquire old allegation data from the Invisible Institute (Rajiv Sinclair) and add that data to our database as new table(s).
+2. What allegations have changed?
 	* Time permitting: what categories of allegations are changed the most?
-2. Which investigators/administrators most often changed the category of allegation (e.g. “Sexual assault” => “Illegal Search and Seizure”)
-3. What data attributes are changed the most? (e.g. category of the allegation, or officers involved, etc)
-4. How often do changes in allegations happen?
+3. Which investigators/administrators most often changed the category of allegation (e.g. “Sexual assault” => “Illegal Search and Seizure”)
+4. What data attributes are changed the most? (e.g. category of the allegation, or officers involved, etc)
+5. How often do changes in allegations happen?
 
 ## Answers based on queries
 * File: **cp1.sql**. The nature of the theme required us to acquire old allegation data and compare the data of allegations from the past to the records of the same allegations in the CPDB database. We created a table called `case_info_08282018` to store the old allegation data. The answer to this first question: “Which allegations have changed” is simply a result set that contains all allegations that have a different category fields or allegation_name fields. This is stored in a table that can be referenced in our next queries and analysis later in the project. See **query1_output.png** for the result set.
