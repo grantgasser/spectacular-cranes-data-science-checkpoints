@@ -5,15 +5,13 @@
 2. What allegations have changed?
 	* Time permitting: what categories of allegations are changed the most?
 3. Can we compare the distribution of allegation categories from the old data set `case_info_08282018` to the new data set (using COUNT and GROUP BY)?
-4. What data attributes are changed the most? (e.g. category of the allegation, or officers involved, etc)
-5. How often do changes in allegations happen?
+4. Using the data generated in Question 3, can we use the discipline data to see how many allegations were disciplined, grouped by category.
 
 ## Answers based on queries
 1. Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious). This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Institute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
 2. File: **cp1_2.sql**. After creating a table called `case_info_08282018` to store the old allegation data, we joined it with other relevant tables in the DB. We joined it with the other allegation tables to give us a chance to see which allegations have changed. Unfortunately, the result showed that although the allegation category strings are different, they still mean the same thing. For example, if you look at **Question2.png**, you can see that although the atrribute **current_category** from the old data (`case_info_08282018`) changed, it still means something similar to **category** in the new dataset. For example, **Question2.png** shows towards the bottom that an allegation category of "SEARCH OF PREMISE WITHOUT WARRANT" is now represented as "Illegal Search." They essentially mean the same thing, and is certainly not evidence of investigators changing the allegation to make it seem less serious.
 3. File: **cp1_3.sql**. Here we compare the distributions of categories in the old data, `case_info_08282018`, and the new data in CPDB. The output can be seen in **Question3_old_data.png** and **Question3_new_data.png**. Further analysis can be done when normalizing the data. This may show how the distribution of allegation categories has changed over time.
-4. File: **cp1_4.sql**. After running this query, we found...
-5. File: **cp1_5.sql**. After running this query, we found...
+4. File: **cp1_4.sql**. See **Question4.png** for output, showing how many allegations were disciplined in each category. Interestingly, **Drug / Alcohol Abuse** had a discipline rate of >50%, which is much higher than most categories. On the other hand, **Illegal Search** was hardly ever disciplined, having a dismal discipline rate of .3%, implying that either many allegations of illegal search are unfounded, hard to prove, or just simply not discplined for no good reason. It is likely a combination of both. Further analysis may benefit from normalization (time-permitting). 
 
 ## Steps for execution
 
@@ -85,6 +83,5 @@ FROM "/Users/sundar/Downloads/08_28_2018_case_info.csv" DELIMITER ',' CSV HEADER
 * cp1_2.sql
 * cp1_3.sql
 * cp1_4.sql
-* cp1_5.sql
 
 * Or directly run these queries once the data is loaded using psql in the terminal, pgAdmin, DataGrip, etc.
