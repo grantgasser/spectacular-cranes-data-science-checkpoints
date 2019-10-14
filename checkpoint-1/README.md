@@ -1,6 +1,4 @@
 # Checkpoint 1
-* Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious)
-  * This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
 
 ## Our Questions from the Proposal (altered a bit)
 1. Can we acquire old allegation data from the Invisible Institute (Rajiv Sinclair) and add that data to our database as new table(s).
@@ -11,7 +9,7 @@
 5. How often do changes in allegations happen?
 
 ## Answers based on queries
-1. 
+1. Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious). This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
 2. File: **cp1.sql**. The nature of the theme required us to acquire old allegation data and compare the data of allegations from the past to the records of the same allegations in the CPDB database. We created a table called `case_info_08282018` to store the old allegation data. The answer to this first question: “Which allegations have changed” is simply a result set that contains all allegations that have a different category fields or allegation_name fields. This is stored in a table that can be referenced in our next queries and analysis later in the project. See **query1_output.png** for the result set.
 3. File: **cp1_2.sql**. After running this query, we found...
 4. File: **cp1_3.sql**. After running this query, we found...
