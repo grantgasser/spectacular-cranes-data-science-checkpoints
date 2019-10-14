@@ -4,7 +4,7 @@
 1. Can we acquire old allegation data from the Invisible Institute (Rajiv Sinclair) and add that data to our database as new table(s)?
 2. What allegations have changed?
 	* Time permitting: what categories of allegations are changed the most?
-3. Can we compare the distribution of allegation categories from the old data set `case_info_08282018` to the new data set (using COUNT).
+3. Can we compare the distribution of allegation categories from the old data set `case_info_08282018` to the new data set (using COUNT)?
 4. What data attributes are changed the most? (e.g. category of the allegation, or officers involved, etc)
 5. How often do changes in allegations happen?
 
