@@ -81,9 +81,9 @@ FROM "/Users/sundar/Downloads/08_28_2018_case_info.csv" DELIMITER ',' CSV HEADER
 **NOTE** that your file path will be different on the last line ^
 
 ### Run the follow SQL files
-* cp1.sql
 * cp1_2.sql
 * cp1_3.sql
 * cp1_4.sql
+* cp1_5.sql
 
 * Or directly run these queries once the data is loaded using psql in the terminal, pgAdmin, DataGrip, etc.
