@@ -6,7 +6,7 @@
 2. What allegations have changed?
 	* Time permitting: what categories of allegations are changed the most?
 3. Can we compare the distribution of allegation categories from the old data set `case_info_08282018` to the new data set (using COUNT and GROUP BY)?
-4. Using the data generated in Question 3, can we use the discipline data to see how many allegations were disciplined, grouped by category.
+4. Using the data generated in Question 3, can we use the discipline data to see how many allegations were disciplined, grouped by category?
 
 ## Answers based on queries
 1. Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious). This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Institute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
