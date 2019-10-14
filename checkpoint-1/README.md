@@ -1,4 +1,5 @@
 # Checkpoint 1
+* **NOTE:** We encountered a bit of a curveball in question #2, which required us to adjust our questions and expectations. Apparently, the names of the allegation categories have changed over the years, despite having similar meaning. This makes it really difficult to tell when allegations were changed to something completely different (possibly less severe) or when the category was just renamed. See #2 for more details.
 
 ## Our Questions from the Proposal (altered a bit)
 1. Can we acquire old allegation data from the Invisible Institute (Rajiv Sinclair) and add that data to our database as new table(s)?
@@ -14,6 +15,7 @@
 4. File: **cp1_4.sql**. See **Question4.png** for output, showing how many allegations were disciplined in each category. Interestingly, **Drug / Alcohol Abuse** had a discipline rate of >50%, which is much higher than most categories. On the other hand, **Illegal Search** was hardly ever disciplined, having a dismal discipline rate of .3%, implying that either many allegations of illegal search are unfounded, hard to prove, or just simply not discplined for no good reason. It is likely a combination of both. Further analysis may benefit from normalization (time-permitting). 
 
 ## Steps for execution
+* **NEED HELP** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results of the queries.
 
 ### Import old data set (Instructions)
 Since our project theme involves identifying the change in allegation information as compared to the current version of the information, we needed data from old versions of case data. 
