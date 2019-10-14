@@ -1,6 +1,6 @@
 -- Checkpoint 1, Question 3
--- Which investigators/administrators most often changed the category
--- of allegation (e.g. “Sexual assault” -> “Illegal Search and Seizure”)
+-- Can we compare the distribution of allegation categories 
+-- from the old data set case_info_08282018 to the new data set (using COUNT and GROUP BY)?
 
 
 -- TIME PERMITTING: normalize these numbers, allows a better comparison
