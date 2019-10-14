@@ -3,6 +3,12 @@
 -- of allegation (e.g. “Sexual assault” -> “Illegal Search and Seizure”)
 
 
--- this will get us started:
-select investigator_id, current_rank from data_allegation da, data_investigatorallegation dia
-where da.id = dia.allegation_id
+-- see allegation category distribution from old data
+select current_category, count(current_category) 
+from case_info_08282018 group by current_category
+
+
+-- category distribution from new cpdb data
+
+
+
