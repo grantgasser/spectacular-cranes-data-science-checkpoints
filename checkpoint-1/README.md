@@ -9,7 +9,7 @@
 5. How often do changes in allegations happen?
 
 ## Answers based on queries
-1. Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious). This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
+1. Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious). This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Institute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
 2. File: **cp1_2.sql**. After creating a table called `case_info_08282018` to store the old allegation data, we joined it with other relevant tables in the DB. We joined the allegation tables and the table containing old allegation data `case_info_08282018` to gives us a chance to see which allegations have changed. See **query1_output.png** for the result set.
 3. File: **cp1_3.sql**. After running this query, we found...
 4. File: **cp1_4.sql**. After running this query, we found...
