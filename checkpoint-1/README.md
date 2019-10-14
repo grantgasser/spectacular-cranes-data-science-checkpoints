@@ -1,7 +1,7 @@
 # Checkpoint 1
 
 ## Our Questions from the Proposal (altered a bit)
-1. Can we acquire old allegation data from the Invisible Institute (Rajiv Sinclair) and add that data to our database as new table(s).
+1. Can we acquire old allegation data from the Invisible Institute (Rajiv Sinclair) and add that data to our database as new table(s)?
 2. What allegations have changed?
 	* Time permitting: what categories of allegations are changed the most?
 3. Which investigators/administrators most often changed the category of allegation (e.g. “Sexual assault” => “Illegal Search and Seizure”)
@@ -10,10 +10,10 @@
 
 ## Answers based on queries
 1. Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious). This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
-2. File: **cp1.sql**. The nature of the theme required us to acquire old allegation data and compare the data of allegations from the past to the records of the same allegations in the CPDB database. We created a table called `case_info_08282018` to store the old allegation data. The answer to this first question: “Which allegations have changed” is simply a result set that contains all allegations that have a different category fields or allegation_name fields. This is stored in a table that can be referenced in our next queries and analysis later in the project. See **query1_output.png** for the result set.
-3. File: **cp1_2.sql**. After running this query, we found...
-4. File: **cp1_3.sql**. After running this query, we found...
-5. File: **cp1_4.sql**. After running this query, we found...
+2. File: **cp1_2.sql**. After creating a table called `case_info_08282018` to store the old allegation data, we joined it with other relevant tables in the DB. The answer to this first question: “Which allegations have changed” is simply a result set that contains all allegations that have a different category fields or allegation_name fields. This is stored in a table that can be referenced in our next queries and analysis later in the project. See **query1_output.png** for the result set.
+3. File: **cp1_3.sql**. After running this query, we found...
+4. File: **cp1_4.sql**. After running this query, we found...
+5. File: **cp1_5.sql**. After running this query, we found...
 
 ## Steps for execution
 
