@@ -1,4 +1,4 @@
--- Checkpoint 1, Question 4
+-- Checkpoint 1, Question 5
 -- How do changes in the allegation type affect officer behavior?
 -- (e.g. If an officer’s allegations are being changed to a less severe
 -- type of allegation, are they more likely to continue receiving more
