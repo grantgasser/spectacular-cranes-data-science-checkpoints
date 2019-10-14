@@ -52,7 +52,7 @@ create table if not exists case_info_08282018
 alter table case_info_08282018 owner to postgres;
 ```
 
-Since now we have the table lets load data into it from the cvs file:
+Since now we have the table lets load data into it from the csv file:
 
 
 ```
@@ -68,7 +68,8 @@ street_direction,
 street_nme,
 apt_no,
 city,
-state	zip_cd,
+state,
+zip_cd,
 occurance_beat,
 current_category_code,
 current_category,
