@@ -1,4 +1,4 @@
--- Checkpoint 1, Question 1
+-- Checkpoint 1, Question 2
 -- Which allegations have changed?
 -- Time permitting: What categories of allegations are changed the most?
 
