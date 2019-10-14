@@ -2,7 +2,7 @@
 * Our theme is looking at how allegations have been changed over time (e.g. The type of allegation being changed to something less serious)
   * This requires us to access data not currently available in CPDB. Professor Rogers and the Invisible Insitute provided us with access to database files and we found `08_28_2018_case_info` to be the most useful for answering these questions.
 
-## Our Questions
+## Our Questions from the Proposal
 1. What allegations have changed?
 	* Time permitting: what categories of allegations are changed the most?
 2. Which investigators/administrators most often changed the category of allegation (e.g. “Sexual assault” => “Illegal Search and Seizure”)
