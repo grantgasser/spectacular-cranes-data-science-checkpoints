@@ -1,3 +1,3 @@
--- Checkpoint 1, Question 3
+-- Checkpoint 1, Question 4
 -- What data attributes are changed the most?
 -- (e.g. category of the allegation, or officers involved, etc)
