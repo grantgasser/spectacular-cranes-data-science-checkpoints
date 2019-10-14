@@ -1,4 +1,4 @@
--- Checkpoint 1, Question 2
+-- Checkpoint 1, Question 3
 -- Which investigators/administrators most often changed the category
 -- of allegation (e.g. “Sexual assault” -> “Illegal Search and Seizure”)
 
