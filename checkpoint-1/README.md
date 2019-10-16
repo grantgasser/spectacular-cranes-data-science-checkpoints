@@ -1,11 +1,16 @@
 # Checkpoint 1
-Our theme requires access to older allegation data not contained in the CPDB database. Here we provide a script to load one csv file (zipped up in `file`) that was provided to us.
+Our theme requires access to older allegation data not contained in the CPDB database. Here we provide a script to load one csv file (zipped up in `cpdb_public_case_info_08282018_data_inserts.sql.zip`) that was provided to us.
 
 ## Loading the data
 **HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results of the queries.
 
 ### Import old data set (Instructions)
-After logging into the database, either in your terminal, pgAdmin, or another tool such as DataGrip, run this query to create the new table where we will store the old allegation data in a table called `case_info_08282018`. 
+* The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you unzip the file after downloading (can usually do so by just clicking on the folder).
+
+* Login into the database in the terminal:
+Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal.
+
+After logging into the database, either in your terminal, in pgAdmin, or another tool such as DataGrip, run this query to create the new table where we will store the old allegation data in a table called `case_info_08282018`. 
 ```
 create table if not exists case_info_08282018
 (
@@ -37,33 +42,10 @@ create table if not exists case_info_08282018
 alter table case_info_08282018 owner to postgres;
 ```
 
-Since now we have the table lets load data into it from the csv file:
+* Now we have an empty table! Let's populate it with the data provided in the csv stored in: `cpdb_public_case_info_08282018_data_inserts.sql`. To do so, simply run: 
+`cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql `.
 
 
-```
-COPY case_info_08282018(log_no,
-incident_fromdate,
-incident_todate,
-complaint_date,
-closedatcopa_datetime,
-current_status,
-location_code,
-street_no,
-street_direction,
-street_nme,
-apt_no,
-city,
-state,
-zip_cd,
-occurance_beat,
-current_category_code,
-current_category,
-current_category_type,
-police_shooting,
-complainant_type,
-investigating_agency) 
-FROM "/Users/sundar/Downloads/08_28_2018_case_info.csv" DELIMITER ',' CSV HEADER;
-```
 **NOTE** that your file path will be different on the last line ^
 
 ### Run the follow SQL files
