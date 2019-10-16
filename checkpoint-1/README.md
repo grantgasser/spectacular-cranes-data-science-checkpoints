@@ -8,7 +8,7 @@ Our theme requires access to older allegation data not contained in the CPDB dat
 * The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you unzip the file after downloading (can usually do so by just clicking on the folder).
 
 * Login into the database in the terminal:
-Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal.
+Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
 
 After logging into the database, either in your terminal, in pgAdmin, or another tool such as DataGrip, run this query to create the new table where we will store the old allegation data in a table called `case_info_08282018`. 
 ```
@@ -43,10 +43,17 @@ alter table case_info_08282018 owner to postgres;
 ```
 
 * Now we have an empty table! Let's populate it with the data provided in the csv stored in: `cpdb_public_case_info_08282018_data_inserts.sql`. To do so, simply run: 
-`cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql `.
+`cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
 
+* In the terminal, you should see something like this:
+```
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1 ``` 
 
-**NOTE** that your file path will be different on the last line ^
 
 ### Run the follow SQL files
 * cp1_2.sql
