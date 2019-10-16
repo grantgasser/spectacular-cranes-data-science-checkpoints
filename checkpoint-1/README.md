@@ -10,39 +10,7 @@ Our theme requires access to older allegation data not contained in the CPDB dat
 * Login into the database in the terminal:
 Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
 
-After logging into the database, either in your terminal, in pgAdmin, or another tool such as DataGrip, run this query to create the new table where we will store the old allegation data in a table called `case_info_08282018`. 
-```
-create table if not exists case_info_08282018
-(
-	log_no varchar,
-	incident_fromdate varchar,
-	incident_todate varchar,
-	complaint_date varchar,
-	closedatcopa_datetime varchar,
-	current_status varchar,
-	location_code varchar,
-	street_no varchar,
-	street_direction varchar,
-	street_nme varchar,
-	apt_no varchar,
-	city varchar,
-	state varchar,
-	zip_cd varchar,
-	occurance_beat integer,
-	current_category_code varchar,
-	current_category varchar,
-	current_category_type varchar,
-	police_shooting varchar,
-	complainant_type varchar,
-	investigating_agency varchar,
-	id serial not null
-		constraint case_info_08282018_pk
-			primary key
-);
-alter table case_info_08282018 owner to postgres;
-```
-
-* Now we have an empty table! Let's populate it with the data provided in the csv stored in: `cpdb_public_case_info_08282018_data_inserts.sql`. To do so, simply run: 
+* Let's create the table and populate it! To do so, simply run: 
 `cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
 
 * In the terminal, you should see something like this:
@@ -55,7 +23,7 @@ INSERT 0 1
 INSERT 0 1
 INSERT 0 1
 ```
-to suggest the data is loading.
+to suggest the table was created and the data is loading.
 
 * Finally, in the terminal, you can run `cpdb=# select * from case_info_08282018;` to test if the data was properly loaded.
 
@@ -64,7 +32,6 @@ to suggest the data is loading.
 * cp1_2.sql
 * cp1_3.sql
 * cp1_4.sql
-
 
 * **CHALLENGES WITH THE THEME:** We encountered a bit of a curveball in question #2, which required us to adjust our questions and expectations. Apparently, the names of the allegation categories have changed over the years, despite having similar meaning. This makes it really difficult to tell when allegations were changed to something completely different (possibly less severe) or when the category was just renamed. See #2 for more details.
 
