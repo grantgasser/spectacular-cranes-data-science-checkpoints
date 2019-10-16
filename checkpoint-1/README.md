@@ -57,7 +57,7 @@ INSERT 0 1
 ```
 to suggest the data is loading.
 
-* Finally, in the terminal, you can run `cpdb=# select * from case_info_08282018` to test if the data was properly loaded.
+* Finally, in the terminal, you can run `cpdb=# select * from case_info_08282018;` to test if the data was properly loaded.
 
 
 ### To see our analysis, run the follow SQL files as well
