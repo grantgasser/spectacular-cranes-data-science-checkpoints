@@ -1,8 +1,33 @@
 # Checkpoint 2
 
-## Background and Loading data
+## Background
 Our project requires old data that was provided to us by the Invisible Institute and Professor Rogers. Here are instructions for loading the data and creating the new `case_info_08282018` table:
 
+## Loading the data
+**HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results of the queries.
+
+### Import old data set (Instructions)
+* The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you unzip the file after downloading (can usually do so by just clicking on the folder).
+
+* Login into the database in the terminal:
+Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
+
+* Let's create the table and populate it! To do so, simply run: 
+`cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
+
+* In the terminal, you should see something like this:
+```
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+```
+to suggest the table was created and the data is loading.
+
+* Finally, in the terminal, you can run `cpdb=# select * from case_info_08282018;` to test if the data was properly loaded.
 
 
 ## Questions
