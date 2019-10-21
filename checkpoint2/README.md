@@ -10,7 +10,7 @@
 
 
 ## Answers
-* The first thing to note is the change in the allegation category names from the old data to the new data (CPDB). In the old data, there were many more categories. 
+* The first thing to note is the change in the allegation category names from the old data to the new data (CPDB). In the old data, there were many more categories and commonly used ones were "MISCELLANOUS", "ARESTEE-DURING ARREST", and "UNECESSARY PHYSICAL CONTACT 0N-DUTY." 
 
 ## File Descriptions:
 
