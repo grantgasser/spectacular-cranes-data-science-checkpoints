@@ -1,6 +1,6 @@
 # Checkpoint 2
 
-## Project Theme 
+## Project Theme
 More on project theme here
 
 ## Background
@@ -15,7 +15,7 @@ Our project requires old data that was provided to us by the Invisible Institute
 * Login into the database in the terminal:
 Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
 
-* Let's create the table and populate it! To do so, simply run: 
+* Let's create the table and populate it! To do so, simply run:
 `cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
 
 * In the terminal, you should see something like this:
@@ -33,6 +33,13 @@ to suggest the table was created and the data is loading.
 * Finally, in the terminal, you can run `cpdb=# select * from case_info_08282018;` to test if the data was properly loaded.
 
 
+## Opening the Notebook
+FILE: `something.twb`
+
+## Running the D3 Visualization
+FILES: `index.html`, `data.tsv`
+
+
 ## Questions
 * Is there a significant difference in the distribution of allegation categories in the new data (CPDB) compared to the old data? Visualization of allegation data distribution by category and compare with different versions of allegation tables - i.e. find allegation category distribution from previous version and compare with the current version of cpdb database (density charts)
 * Visual Chart (heatmap) that plots the incidence of allegation categories normalized by the # of reports associated with that area. (location-based)
@@ -41,7 +48,6 @@ to suggest the table was created and the data is loading.
 
 
 ## Answers
-* The first thing to note is the change in the allegation category names from the old data to the new data (CPDB). In the old data, there were many more categories and commonly used ones were "MISCELLANOUS", "ARESTEE-DURING ARREST", and "UNECESSARY PHYSICAL CONTACT 0N-DUTY." 
+* The first thing to note is the change in the allegation category names from the old data to the new data (CPDB). In the old data, there were many more categories and commonly used ones were "MISCELLANOUS", "ARESTEE-DURING ARREST", and "UNECESSARY PHYSICAL CONTACT 0N-DUTY."
 
 ## File Descriptions:
-
