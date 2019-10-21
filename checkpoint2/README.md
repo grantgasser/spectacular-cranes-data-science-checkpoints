@@ -1,5 +1,7 @@
 # Checkpoint 2
 
+## Project Theme 
+
 ## Background
 Our project requires old data that was provided to us by the Invisible Institute and Professor Rogers. Here are instructions for loading the data and creating the new `case_info_08282018` table:
 
