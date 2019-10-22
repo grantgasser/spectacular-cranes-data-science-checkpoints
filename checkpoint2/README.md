@@ -59,6 +59,8 @@ Open a new tab in your browser and type in `localhost:8000` as the url to see th
 1. Is there a significant difference in the distribution of allegation categories in the new data (CPDB) compared to the old data? Visualization of allegation data distribution by category and compare with different versions of allegation tables - i.e. find allegation category distribution from previous version and compare with the current version of cpdb database (density charts)
 2. How are the allegation categories of the new data (CPDB) distributed geographically (can we create points on a map to show the distribution?)
 3. Similar to question 2, how are allegation categories distributed among beat id's? Can we compare the both the distribution of the old data and the new data? (maybe bubble density chart)
+  - a) Category Distribution percentage by Beat ID : This chart gives the visual concentric layers of category of allegations which also shows the relative strength of different categories - the girth of the circular segment represents the promoninece of the respective allegation categories
+  - b) Category percentage by Beat ID : With this visualisation we wanted to represent the relative size of allegation counts by the individual beat units of chicago police department
 4. How have the allegation categories changed from the old data to the new (CPDB)? Are there more or less categories? What is the distribution for the categories, old and new? (pie chart or donut chart)
 
 
