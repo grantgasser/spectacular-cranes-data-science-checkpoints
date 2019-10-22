@@ -15,13 +15,14 @@ Our project requires old data that was provided to us by the Invisible Institute
 ### Import old data set (Instructions)
 * The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. You can copy the file from your machine and store it in **Downloads**. Alternatively, you can navigate to the [GitHub repo](https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint2) and click on the file. At the top right, there is the option to download the file. 
 
-**NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you unzip the file after downloading (can usually do so by just clicking on the folder).
+**NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you   unzip the file after downloading (can usually do so by just clicking on the folder).
 
 * Login into the database in the terminal:
 Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
 
 * Let's create the table and populate it! To do so, simply run:
 `cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
+  - An easy way to get the path of the file is to locate it in Finder and simply drag the file to the terminal.
 
 * In the terminal, you should see something like this:
 ```
