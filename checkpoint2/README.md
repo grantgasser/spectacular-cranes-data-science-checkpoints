@@ -7,7 +7,7 @@ https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/
 Our theme is about looking at how the allegation categories of previous Chicago Police databases has changed. We compare old allegation data (not inclduded in CPDB) with the allegation data found in CPDB.
 
 ## Background
-Our project requires old data that was provided to us by the Invisible Institute and Professor Rogers. **NOTE:** you will need this data for the workbook and D3 visualization to work. Here are instructions for loading the data and creating the new `case_info_08282018` table:
+Our project requires old data that was provided to us by the Invisible Institute and Professor Rogers. **NOTE: you will need this data for the workbook and D3 visualization to work**. Here are instructions for loading the data and creating the new `case_info_08282018` table:
 
 ## Loading the data
 **HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results.
