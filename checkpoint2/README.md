@@ -1,5 +1,8 @@
 # Checkpoint 2
 
+### GitHub repo link
+https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint2
+
 ## Project Theme Synopsis
 Our theme is about looking at how the allegation categories of previous Chicago Police databases has changed. We compare old allegation data (not inclduded in CPDB) with the allegation data found in CPDB.
 
@@ -10,7 +13,7 @@ Our project requires old data that was provided to us by the Invisible Institute
 **HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results.
 
 ### Import old data set (Instructions)
-* The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. In GitHub, click on the file and there will be an option to the top right to Download the file. **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you unzip the file after downloading (can usually do so by just clicking on the folder).
+* The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. You can copy the file from your machine and store it in Downloads. Alternatively, you can navigate to the [GitHub repo](https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint2) and click on the file. At the top right, there is the option to download the file. **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you unzip the file after downloading (can usually do so by just clicking on the folder).
 
 * Login into the database in the terminal:
 Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
