@@ -7,7 +7,7 @@ Our theme is about looking at how the allegation categories of previous Chicago 
 Our project requires old data that was provided to us by the Invisible Institute and Professor Rogers. Y**NOTE:** you will need this data for the workbook and D3 visualization to work. Here are instructions for loading the data and creating the new `case_info_08282018` table:
 
 ## Loading the data
-**HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results of the queries.
+**HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results.
 
 ### Import old data set (Instructions)
 * The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you unzip the file after downloading (can usually do so by just clicking on the folder).
