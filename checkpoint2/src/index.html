@@ -21,8 +21,8 @@ form {
 
 </style>
 <form>
-  <label><input type="radio" name="dataset" value="apples" checked> Apples</label>
-  <label><input type="radio" name="dataset" value="oranges"> Oranges</label>
+  <label><input type="radio" name="dataset" value="old_category_distribution" checked> Old Category Dist.</label>
+  <label><input type="radio" name="dataset" value="new_category_distribution"> New Category Dist.</label>
 </form>
 <!-- <script src="//d3js.org/d3.v3.min.js"></script> -->
 <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
@@ -32,10 +32,10 @@ var width = 960,
     height = 500,
     radius = Math.min(width, height) / 2;
 
-var color = d3.scale.category20();
+var color = d3.scale.category20()
 
 var pie = d3.layout.pie()
-    .value(function(d) { return d.apples; })
+    .value(function(d) { return d.old_category_distribution; })
     .sort(null);
 
 var arc = d3.svg.arc()
@@ -48,18 +48,18 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-d3.tsv("data.tsv", type, function(error, data) {
+d3.csv("old_and_new_category_data.csv", type, function(error, data) {
   var path = svg.datum(data).selectAll("path")
       .data(pie)
-    .enter().append("path")
+      .enter().append("path")
       .attr("fill", function(d, i) { return color(i); })
-      .attr("d", arc);
+      .attr("d", arc)
 
   d3.selectAll("input")
       .on("change", change);
 
   var timeout = setTimeout(function() {
-    d3.select("input[value=\"oranges\"]").property("checked", true).each(change);
+    d3.select("input[value=\"new_category_distribution\"]").property("checked", true).each(change);
   }, 2000);
 
   function change() {
@@ -72,8 +72,8 @@ d3.tsv("data.tsv", type, function(error, data) {
 });
 
 function type(d) {
-  d.apples = +d.apples;
-  d.oranges = +d.oranges;
+  d.old_category_distribution = +d.old_category_distribution;
+  d.new_category_distribution = +d.new_category_distribution;
   return d;
 }
 
