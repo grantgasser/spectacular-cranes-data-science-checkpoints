@@ -21,8 +21,7 @@ Our project requires old data that was provided to us by the Invisible Institute
 Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
 
 * Let's create the table and populate it! To do so, simply run:
-
-`cpdb=# \i <PATH_TO_THE_FILE_SHOULD_LOOK_LIKE_THIS_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
+`cpdb=# \i <YOUR_PATH_HERE_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
   - An easy way to get the path of the file is to locate it in Finder and simply drag the file to the terminal.
 
 * In the terminal, you should see something like this:
