@@ -43,16 +43,11 @@ to suggest the table was created and the data is loading.
 See `WorkbookLoading.pdf` for more assistance. The workbook contains the visualizations to Questions 1-3. To load the Tableau workbook, `CP2_Workbook_Cranes.twb`, simply click on the file on your local machine. Tableau may prompt you to login to your postgres server. Assuming the `case_info` data is loaded, the visualizations should load.
 
 ## Running the D3 Visualization
-FILES: `index.html`, `old_and_new_category_data.csv`. To run the `index.html` file on a local server, cd into the `/src` directory from the terminal. Assuming you have python installed on your machine (if not, just see the attached photos), you can now run:
-`python -m http.server`. You should see something like this:
-```
-(base) Grants-MacBook-Pro:d3 grantgasser$ python -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-127.0.0.1 - - [21/Oct/2019 21:17:46] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [21/Oct/2019 21:17:46] "GET /old_and_new_category_data.csv HTTP/1.1" 200 -
-```
-
-Open a new tab in your browser and type in `localhost:8000` as the url to see the interactive visualization.
+- In Terminal, navigate to `src/d3/`
+- Start a webserver with either `node` or `Python3`
+  - Python: `python -m http.server` (installed with Python3 by default)
+  - Node: `http-server` ([install](https://www.npmjs.com/package/http-server))
+- Open a tab in your browser and navigate to localhost:[PORT] (usually 8000 or 8080, depending on the webserver used)
 
 ## Clean Up
 When you are finished viewing the visualizations, be sure to run `drop table case_info_08282018` to remove the table from CPDB.
