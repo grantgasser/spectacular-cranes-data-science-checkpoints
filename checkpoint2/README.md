@@ -56,13 +56,10 @@ When you are finished viewing the visualizations, be sure to run `drop table cas
 
 ## Questions
 1. Is there a significant difference in the distribution of allegation categories in the new data (CPDB) compared to the old data? Visualization of allegation data distribution by category and compare with both versions of allegation tables (density charts)
-2. Create a mapping: For each old category name, what is the most common new category name? This will help us establish a mapping from old category names to new category names. (E.g. "Neglect of Duty" records in the old data changed to "Neglect of Duty" in the new data 97.8% of the time. That means its safe to say that (Neglect of Duty => Neglect of Duty) is the mapping. If we see a record with "Neglect of Duty" in the old data but something different than "Neglect of Duty" in the new data, that might imply the category was changed to something significantly different, which may imply some foul play). We determined the "true" mapping based on which mapping was most common. The goal of this visualization is to allow the user to easily see the mapping.
-3. 
+2. Create a mapping: For each old category name, what is the most common new category name? This will help us establish a mapping from old category names to new category names. (E.g. "Neglect of Duty" records in the old data changed to "Neglect of Duty" in the new data 97.8% of the time. That means its safe to say that (Neglect of Duty => Neglect of Duty) is the mapping. If we see a record with "Neglect of Duty" in the old data but something different than "Neglect of Duty" in the new data, that might imply the category was changed to something significantly different, which may imply some foul play). We determined the "true" mapping based on which mapping was most common. This can act as a lookup table for the Invisible Inst. or ourselves when we need to know which allegation category a record should correspond to. The goal of this visualization is to allow the user to easily see the mapping. We do the same thing for Location, not just Allegation.
+3. Looking at instances where the "true" mapping is violated, try to identify records where allegation category names are commonly changed to a category that is less either "severe" or completely unrelated. This may offer some insight as to whether there are some common techniques used to mitigate the effects of an allegation (i.e. foul play). Like question 2, we also do this for Location and not just Allegation. 
 4. How have the allegation categories changed from the old data to the new (CPDB)? Are there more or less categories? What is the distribution for the categories, old and new? (pie chart or donut chart)
 
 
 ## Quick Answers
-1. See `Question1` dashboard in the workbook. You may also look at the attached pictures. 
-2. 
-3. 
-4. See `/src/d3/index.html` or the two "Screen Shots" of the donut charts to see what the interactive vizualization might look like. Here, with "Old Category Dist" selected, you can see many more categories and a much more skewed distribution. When "New Category Dist" is selected, you can see less categories and a somewhat more even distribution where for example, the purple part is "Use of Force", which confirms what we have seen in previous visualizations such as the one for Question 1.
+See the Findings.pdf
