@@ -34,7 +34,7 @@ INSERT 0 1
 ```
 to suggest the table was created and the data is loading.
 
-* Finally, in the terminal, you can run `cpdb=# select * from SQLScriptMapping;` to test if the data was properly loaded.
+* Finally, in the terminal, you can run `cpdb=# select * from allegation_mapping_old_and_new;` to test if the data was properly loaded.
 
 **HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results.
 
