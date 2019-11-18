@@ -1,4 +1,4 @@
-# Checkpoint 2
+# Checkpoint 3
 
 ## Project Theme Summary
 Our theme is about looking at how the allegation categories have changed over time from previous Chicago Police databases. For now, we are only looking at one old table: `case_info_08282018`. We compare old allegation data (not inclduded in CPDB) with the allegation data found in CPDB. A step we decided to take recently is to see for a given allegation category for a record in the old dataset, what is the most common new category name it has in CPDB? If we can define the "mapping" using this most common idea, then we have some idea about how the category names have changed over time. If we see a record where the mapping is violated (the new category name is not what is usually most common), then we may have some information here. This could reveal some foul play such as changing the allegation category to something less "severe" or something completely unrelated. 
@@ -12,8 +12,9 @@ Our project requires old data that was provided to us by the Invisible Institute
 
 ## Loading the data
 
+
 ### Import old data set (Instructions)
-* The first thing you should do is download `cpdb_public_case_info_08282018_data_inserts.sql.zip` from the repository which contains the old allegation data. You can copy the file from your machine and store it in **Downloads**. You can make a copy of the one in you current folder or download it from the [github repo](https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint2).
+* The first thing you should do is download `SQLScriptMapping.sql` from the repository which contains mapping of allegation data. You can copy the file from your machine and store it in **Downloads**. You can make a copy of the one in you current folder or download it from the [github repo](https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint3).
 
 **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you   unzip the file after downloading (can usually do so by just clicking on the folder).
 
@@ -21,7 +22,7 @@ Our project requires old data that was provided to us by the Invisible Institute
 Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
 
 * Let's create the table and populate it! To do so, simply run:
-`cpdb=# \i <YOUR_PATH_HERE_Downloads/cpdb_public_case_info_08282018_data_inserts.sql> `.
+`cpdb=# \i <YOUR_PATH_HERE_Downloads/SQLScriptMapping.sql> `.
   - An easy way to get the path of the file is to locate it in Finder and simply drag the file to the terminal.
 
 * In the terminal, you should see something like this:
@@ -36,16 +37,20 @@ INSERT 0 1
 ```
 to suggest the table was created and the data is loading.
 
-* Finally, in the terminal, you can run `cpdb=# select * from case_info_08282018;` to test if the data was properly loaded.
+* Finally, in the terminal, you can run `cpdb=# select * from SQLScriptMapping;` to test if the data was properly loaded.
 
 **HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results.
+
+
 
 
 ## Opening the Notebook
 See `WorkbookLoading.pdf` for more assistance. The workbook contains the visualizations to Questions 1-3. To load the Tableau workbook, `CP2_Workbook_Cranes.twb`, simply click on the file on your local machine. Tableau may prompt you to login to your postgres server. Assuming the `case_info` data is loaded, the visualizations should load.
 
 ## Clean Up
-When you are finished viewing the visualizations, be sure to run `drop table case_info_08282018` to remove the table from CPDB.
+When you are finished running your review, be sure to run `drop table allegation_mapping_old_and_new` to remove the table from CPDB.
+
+
 
 ## Questions
 
