@@ -9,8 +9,9 @@ To create this mapping, we joined `case_info_08282018` with CPDB tables such as 
 
 ## Loading the required data
 
-### Import our data set (Instructions)
-* The first thing you should do is download `SQLScriptMapping.sql` from the repository which contains mapping of allegation data. You can copy the file from your machine and store it in **Downloads**. You can make a copy of the one in you current folder or download it from the [github repo](https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint3).
+
+### Import old data set (Instructions)
+* The first thing you should do is download `LoadDataSQLScript.sql` from the repository which contains mapping of allegation data. You can copy the file from your machine and store it in **Downloads**. You can make a copy of the one in you current folder or download it from the [github repo](https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint3).
 
 **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you   unzip the file after downloading (can usually do so by just clicking on the folder).
 
@@ -18,7 +19,7 @@ To create this mapping, we joined `case_info_08282018` with CPDB tables such as 
 Run `psql cpdb postgres`, then enter your password. You should now see `cpdb=#` in your terminal if the login was successful.
 
 * Let's create the table and populate it! To do so, simply run:
-`cpdb=# \i <YOUR_PATH_HERE_Downloads/SQLScriptMapping.sql> `.
+`cpdb=# \i <YOUR_PATH_HERE_Downloads/LoadDataSQLScript.sql> `.
   - An easy way to get the path of the file is to locate it in Finder and simply drag the file to the terminal.
 
 * In the terminal, you should see something like this:
