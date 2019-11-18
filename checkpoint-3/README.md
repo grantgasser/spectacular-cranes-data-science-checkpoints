@@ -7,10 +7,7 @@ For example, if we see that "Illegal Arrest / False Arrest" from the old data ma
 
 To create this mapping, we joined `case_info_08282018` with CPDB tables such as `data_allegation`, `data_allegationcategory`, `data_officer`, etc and used Trifacta to find the mapping and store in two tables: `mapping_allegation_old_to_new` and `mapping_location_old_to_new`.
 
-## Background
-Our project requires old data that was provided to us by the Invisible Institute and Professor Rogers. **NOTE: you will need this data for the workbook and D3 visualization to work**. Here are instructions for loading the data and creating the new `case_info_08282018` table:
-
-## Loading the data
+## Loading the required data
 
 
 ### Import old data set (Instructions)
@@ -42,18 +39,12 @@ to suggest the table was created and the data is loading.
 **HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results.
 
 
-
-
-## Opening the Notebook
-See `WorkbookLoading.pdf` for more assistance. The workbook contains the visualizations to Questions 1-3. To load the Tableau workbook, `CP2_Workbook_Cranes.twb`, simply click on the file on your local machine. Tableau may prompt you to login to your postgres server. Assuming the `case_info` data is loaded, the visualizations should load.
-
 ## Clean Up
 When you are finished running your review, be sure to run `drop table allegation_mapping_old_and_new` to remove the table from CPDB.
 
 
 
 ## Questions
-
 
 
 ## Answers
