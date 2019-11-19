@@ -1,3 +1,4 @@
+-- PLEASE Note You have to run all the three below queries
 -- TEMP TABLE: Combine Arrests and Allegation Data
 -- 1st
 select
