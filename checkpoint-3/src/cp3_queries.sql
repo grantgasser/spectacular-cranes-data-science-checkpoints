@@ -7,7 +7,11 @@ from allegation_mapping_old_and_new
 where allegation_mapping_boolean is false) / (select count(*) as total
 from allegation_mapping_old_and_new)::float * 100
 
--- 56356 / 175533 = 32%
+/* 
+RESULT:
+
+56356 / 175533 = 32%
+*/
 
 -- Q3 pt2
 select statute_description, count(*) as cnt from allegation_mapping_old_and_new as map_old_new,
@@ -18,7 +22,9 @@ group by statute_description
 order by cnt desc
 limit 3
 
-/*
+/* 
+RESULT:
+
 "PCS - POSSESSION - LESS THAN 15 GRMS - COCAINE"	"17802"
 "DISORDERLY CONDUCT - BREACH OF PEACE"	"10026"
 "CRIMINAL TRESPASS TO STATE LAND"	"9447"
