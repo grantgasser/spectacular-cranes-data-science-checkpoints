@@ -38,9 +38,14 @@ to suggest the table was created and the data is loading.
 
 **HAVING TROUBLE** loading data? Contact sundar@northwestern.edu. You may also view the output png files provided to see the results.
 
+## Create Temporary Arrest/Allegation Table 
+We have some join queries in order to integrate arrest and allegation data (stored in `temp_arrests_and_allegations_total`) to be further joined with (in the queries) our mapping table (`allegation_mapping_old_and_new`) using `crid`. 
+
+Please run the three queries in `create_temp.sql` one by one. **Note:** the second query may take a while to run, but it should be less than 1-2 minutes.
+
 
 ## Clean Up
-When you are finished running your review, be sure to run `drop table allegation_mapping_old_and_new` to remove the table from CPDB.
+Run `drop table allegation_mapping_old_and_new` and `drop table temp_arrests_and_allegations_total` to remove the table from CPDB.
 
 
 
