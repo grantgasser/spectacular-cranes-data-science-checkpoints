@@ -9,8 +9,8 @@ To create this mapping, we joined `case_info_08282018` with CPDB tables such as 
 
 ## Loading the required data
 
-
 ### Import old data set (Instructions)
+* Now we want to create the `allegation_mapping_old_and_new` table.
 * The first thing you should do is download `LoadDataSQLScript.sql.zip` from the repository which contains mapping of allegation data. You can copy the file from your machine and store it in **Downloads**. You can make a copy of the one in you current folder or download it from the [github repo](https://github.com/grantgasser/spectacular-cranes-data-science-checkpoints/tree/master/checkpoint-3).
 
 **NOTE:** Be sure to store this in the **Downloads** folder (you want to avoid spaces in your file path). Make sure you   unzip the file after downloading (can usually do so by just clicking on the folder).
