@@ -26,7 +26,33 @@ crid  first   last  num_allegation_category_changes
 2153	"Andrew"	"Costello"	"390"
 */
 
--- Q3 What percentage allegations had their category changed?
+-- Q3 Identify the top 10 investigators
+-- whose associated allegations (categories) changed most often.
+select map_old_new.new_investigator_id, di.first_name, di.last_name, count(distinct aa.crid) as num_allegation_category_changes 
+from temp_arrests_and_allegations_total aa, allegation_mapping_old_and_new as map_old_new, data_investigator di
+where map_old_new.crid_and_log_no = aa.crid
+and map_old_new.new_investigator_id = di.id
+and map_old_new.allegation_mapping_boolean is false
+group by map_old_new.new_investigator_id, di.first_name, di.last_name
+order by num_allegation_category_changes desc 
+limit 10
+
+/*
+RESULT:
+id first last num_allegation_category_changes
+3182	"Maria"	"Olvera"	"689"
+3281	"George"	"Roberts"	"540"
+3228	"Bruce"	"Dean"	"535"
+3283	"Lorenzo"	"Davis"	"425"
+3260	"Patrick"	"Querfurth"	"392"
+3289	"Andrea"	"Stoutenborough"	"325"
+3303	"Paula"	"Tillman"	"321"
+3274	"Alexis"	"Serio"	"306"
+3163	"Sherry"	"Daun"	"303"
+3301	"Joseph"	"Fakuade"	"287"
+*/
+
+-- Q4 What percentage allegations had their category changed?
 -- Of those, what are the top 3 most common statute descriptions?
 select (select count(*) as num_false
 from allegation_mapping_old_and_new
@@ -39,7 +65,7 @@ RESULT:
 56356 / 175533 = 32%
 */
 
--- Q3 pt2
+-- Q4 pt2
 select statute_description, count(*) as cnt from allegation_mapping_old_and_new as map_old_new,
 temp_arrests_and_allegations_total aa
 where map_old_new.crid_and_log_no = aa.crid
