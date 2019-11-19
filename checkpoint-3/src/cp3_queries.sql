@@ -11,6 +11,8 @@ order by num_allegation_category_changes desc
 limit 10
 
 /*
+RESULT:
+
 crid  first   last  num_allegation_category_changes
 16551	"Eric"	"Lee"	"461"
 18639	"Daniel"	"Rosales"	"444"
