@@ -1,5 +1,16 @@
 -- CP3 Queries
 
+-- Q1 For each officer, count the number of allegation changes, showing the old and new category name
+select d.id, d.first_name, d.last_name ,am.old_category, am.new_allegation_name new_cat,
+count(am.old_category) old_cat
+from data_allegation da, allegation_mapping_old_and_new am, data_officerallegation doa, data_officer d
+where am.crid_and_log_no = da.crid
+and doa.allegation_id = da.id
+and doa.officer_id = d.id
+and am.allegation_mapping_boolean is false
+group by d.id, d.first_name, d.last_name, d.first_name, d.id, am.new_allegation_name, am.old_category
+order by d.id, old_cat desc
+
 -- Q2 Identify the top 10 officers (time permitting, investigators)
 -- whose associated allegations (categories) changed most often.
 select aa.officer_id, aa.officer_fname, aa.officer_lname, count(distinct aa.crid ) as num_allegation_category_changes 
