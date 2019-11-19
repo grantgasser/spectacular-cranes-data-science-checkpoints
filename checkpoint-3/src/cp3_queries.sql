@@ -2,7 +2,7 @@
 
 -- Q2 Identify the top 10 officers (time permitting, investigators)
 -- whose associated allegations (categories) changed most often.
-select aa.officer_id, aa.officer_fname, aa.officer_lname, count(*) as num_allegation_category_changes from temp_arrests_and_allegations_total aa,
+select aa.officer_id, aa.officer_fname, aa.officer_lname, count(distinct aa.crid ) as num_allegation_category_changes from temp_arrests_and_allegations_total aa,
 allegation_mapping_old_and_new as map_old_new
 where map_old_new.crid_and_log_no = aa.crid
 and map_old_new.allegation_mapping_boolean is false
