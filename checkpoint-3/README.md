@@ -50,7 +50,10 @@ Run `drop table allegation_mapping_old_and_new`, `drop table temp_arrests_and_al
 
 
 ## Questions
-
+1. For each officer, count the number of allegation changes, showing the old and new category name.
+2. Identify the top 10 officers whose associated allegations (categories) change most often.
+3. Similar to #2, can we identify the top 10 investigators of allegations where the categories of those allegations changed the most? 
+4. What percentage allegations had their category changed? Of those, what are the top 3 most common statute descriptions (we might be able to identify some common cover charges)? 
 
 ## Answers
 See `findings.pdf`
