@@ -46,9 +46,9 @@ Please run the three queries in `create_temp.sql` one by one. **Note:** the seco
 
 ## Clean Up
 Run ```drop table allegation_mapping_old_and_new;
-`drop table temp_arrests_and_allegations_total; 
-`drop table temp_arrests_and_allegations_2;
-`drop table temp_arrests_and_allegations;``` 
+drop table temp_arrests_and_allegations_total; 
+drop table temp_arrests_and_allegations_2;
+drop table temp_arrests_and_allegations;``` 
 to remove the tables from CPDB.
 
 
