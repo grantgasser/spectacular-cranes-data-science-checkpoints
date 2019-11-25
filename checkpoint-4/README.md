@@ -12,9 +12,8 @@ We use the mapping table joined back with the allegation data (see `cp4.sql`) to
 
 ## Graph Structure
 Each vertex is an officer, and an edge means they were listed on the same allegation. Weight of the edge is how many times they were listed on the same allegation. (basically the co-accusal analysis with our theme’s flavor thrown in).
-* Vertex: (officer_id, officer_fname, officer_lname, complaint_percentile)
-* Edge: (src, dst, crid, old_category, new_category)
-
+* Vertex: `(officer_id, officer_fname, officer_lname, complaint_percentile)`
+* Edge: `(src, dst, crid, old_category, new_category)`
 
 ## Questions
 1. 
