@@ -16,10 +16,17 @@ Each vertex is an officer. Two vertices have an edge if they were listed on the 
 * Edge: `(src, dst, crid, old_category, new_category)`
 
 ## Submission 
-### See this link if you have trouble loading the data and running our notebook)
+* See this link if you have trouble loading the data and running our notebook)
 [Submission Notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2972359237889048/2026875101445323/3016676346692700/latest.html)
 
 ## Loading Data and Running Notebook
+* Load `mapping_and_allegation_joined.csv` into Databricks (**Data** => **Add Data** => **Drag the file or upload** => **Create Table with UI**. Select the cluster you are running and ensure the table is named `mapping_and_allegation_joined`.
+* Install GraphFrames
+- **Cluster** => **Libraries** => **Install New** => **Maven**. Copy/paste `graphframes:graphframes:0.7.0-spark2.4-s_2.11` into the "Coordinates" field. Then click **Install.**
+* Install NetworkX (for visualization)
+- **Cluster** => **Libraries** => **Install New** => **PyPi**. Copy/paste `networkx` into the "Package" field. Then click **Install**.
+
+* Once this is all done, you should be able to run the notebook.
 
 ## Questions
 1. Simple [PageRank Explanation](https://towardsdatascience.com/graphs-and-paths-pagerank-54f180a1aa0a). Use PageRank to identify the most "imporant/influential" vertices in the graph. These are officers that are most frequently connected to other offices where the associated allegations have their category changed. 
