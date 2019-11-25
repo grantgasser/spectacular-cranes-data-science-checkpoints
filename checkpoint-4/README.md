@@ -19,7 +19,7 @@ Each vertex is an officer. Two vertices have an edge if they were listed on the 
 [Submission Notebook](https://www.google.com/)
 
 ## Questions
-1. [PageRank description](https://towardsdatascience.com/graphs-and-paths-pagerank-54f180a1aa0a)
+1. Simple [PageRank Explanation](https://towardsdatascience.com/graphs-and-paths-pagerank-54f180a1aa0a)
 2. 
 
 ## Answers
