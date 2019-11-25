@@ -10,13 +10,13 @@ To create this mapping, we joined `case_info_08282018` with CPDB tables such as 
 ## CP4 Data
 We use the mapping table joined back with the allegation data (see `cp4.sql`) to construct our graph. Note that the query only pulls allegations where `allegation_mapping_boolean` is **false** (the mapping is violated).
 
-### Instructions for loading the table
-Loading the mapping data is relatively simple.
-
 ## Graph Structure
 Each vertex is an officer. Two vertices have an edge if they were listed on the same allegation (remember, only allegations where the mapping was violated, which means the allegation category was changed in a potentially suspicious way). This is basically just the co-accusal analysis but this only looks at allegations where the category changed in the police database.
 * Vertex: `(officer_id, officer_fname, officer_lname, complaint_percentile)`
 * Edge: `(src, dst, crid, old_category, new_category)`
+
+## Submission
+[Submission Notebook](www.google.com)
 
 ## Questions
 1. 
