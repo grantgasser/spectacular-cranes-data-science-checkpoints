@@ -16,7 +16,7 @@ Each vertex is an officer. Two vertices have an edge if they were listed on the 
 * Edge: `(src, dst, crid, old_category, new_category)`
 
 ## Submission
-[Submission Notebook](www.google.com)
+[Submission Notebook](https://www.google.com/)
 
 ## Questions
 1. 
