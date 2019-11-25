@@ -19,8 +19,8 @@ Each vertex is an officer. Two vertices have an edge if they were listed on the 
 [Submission Notebook](https://www.google.com/)
 
 ## Questions
-1. Simple [PageRank Explanation](https://towardsdatascience.com/graphs-and-paths-pagerank-54f180a1aa0a)
-2. 
+1. Simple [PageRank Explanation](https://towardsdatascience.com/graphs-and-paths-pagerank-54f180a1aa0a). Use PageRank to identify the most "imporant/influential" vertices in the graph. These are officers that are most frequently connected to other offices where the allegation categories have changed. 
+2. Use the Label Propagation Algorithm 
 
 ## Answers
 See `findings.pdf`
