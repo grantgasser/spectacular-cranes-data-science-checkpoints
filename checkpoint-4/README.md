@@ -15,8 +15,7 @@ Each vertex is an officer. Two vertices have an edge if they were listed on the 
 * Vertex: `(officer_id, officer_fname, officer_lname, complaint_percentile)`
 * Edge: `(src, dst, crid, old_category, new_category)`
 
-## Submission 
-* See this link if you have trouble loading the data and running our notebook)
+## Submission (See here if you have trouble loading the data or running the notebook)
 [Submission Notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2972359237889048/2026875101445323/3016676346692700/latest.html)
 
 ## Loading Data and Running Notebook
