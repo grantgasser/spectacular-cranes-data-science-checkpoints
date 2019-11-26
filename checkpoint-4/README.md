@@ -31,6 +31,9 @@ Each vertex is an officer. Two vertices have an edge if they were listed on the 
 
 * Once this is all done, you should be able to run the notebook.
 
+## NOTE
+* If you are running the notebook yourself, you may have different results. Please refer to our [submission notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2972359237889048/2026875101445323/3016676346692700/latest.html) in which our analysis is based on.
+
 ## Questions
 1. Simple [PageRank Explanation](https://towardsdatascience.com/graphs-and-paths-pagerank-54f180a1aa0a). Use PageRank to identify the most "imporant/influential" vertices in the graph. These are officers that are most frequently connected to other offices where the associated allegations have their category changed. 
 2. Use the Label Propagation Algorithm to cluster the officers co-accused on allegations where the category changed. The clusters will be identified with "labels." This will allow someone to see not only which officers are frequently co-accused, but which officers are frequently co-accused and then the allegation category later changes.
