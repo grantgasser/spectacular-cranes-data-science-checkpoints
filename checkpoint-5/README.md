@@ -11,7 +11,7 @@ To create this mapping, we joined `case_info_08282018` with CPDB tables such as 
 We use the mapping table joined back with the allegation data where `allegation_mapping_boolean` is **false** (the mapping is violated).
 
 ## Submission (If you have trouble loading the data or running the notebook)
-* Then just view the analysis here: 
+* Running our notebook might be a pain in the ass since we have extra data. If you want to just view the public notebook, click here:
 [Submission Notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4900197171910677/2588658287668770/3016676346692700/latest.html)
 
 ## Loading Data and Running Notebook (in Databricks)
