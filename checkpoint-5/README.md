@@ -16,6 +16,7 @@ We use the mapping table joined back with the allegation data where `allegation_
 
 ## Loading Data and Running Notebook (in Databricks)
 * Make sure you have a cluster running before you load the data.
+* Install `kmodes` and `textblob` on the cluster. **Clusters** => **Libraries** => **Install New** => **PyPi** and enter `kmodes` and later, `textblob` under **Packages.**
 * Load `mapping_and_allegation_joined.csv` into Databricks (**Data** => **Add Data** => **Drag the file or upload** => **Create Table with UI**. Select the cluster you are running and ensure the table is named `mapping_and_allegation_joined_csv`! ([Help](https://docs.databricks.com/data/tables.html)). 
 * Make sure the box that says "First row is header" is checked. Also, change the data type of the `allegation_mapping_boolean` (last column) field to BOOLEAN.
 * Now visit [our notebook here](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4900197171910677/2588658287668770/3016676346692700/latest.html) and click **Import** at the top. Copy the URL.
