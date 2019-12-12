@@ -25,10 +25,13 @@ We use the mapping table joined back with the allegation data where `allegation_
 * Once this is all done, you should be able to run the notebook.
 
 ## NOTE
-If you are running the notebook yourself, you may have different results. Please refer to our [submission notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2972359237889048/2026875101445323/3016676346692700/latest.html) in which our analysis is based on.
+If you are running the notebook yourself, you may have different results. Please refer to our [submission notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4900197171910677/2588658287668770/3016676346692700/latest.html) in which our analysis is based on.
 
 ## Questions
-1. 
+1. Cluster allegations and try to find cluster and group allegations based on similar inputs (i.e. maybe there are certain allegations that are commonly being changed to certain new categories with certain officers).
+2. Predict Allegation count monthly by allegation category by looking at monthly allegation data.
+3. Compare allegation category strings where the mapping was violated (suspicious changes). Of these allegations, which ones have similar category strings (using cosine similarity), meaning that although the category changed, the names of the categories still mean roughly the same thing. 
+4. Compare the sentiment of the old category strings vs. the new category strings (using sentiment as a proxy for severity). If the sentiment of the new category is more positive (less negative) than the previous category, that might imply that the category was changed to something less severe.
 
 ## Answers
 See `findings.pdf`
