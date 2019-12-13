@@ -7,6 +7,9 @@ For example, if we see that "Illegal Arrest / False Arrest" from the old data ma
 
 To create this mapping, we joined `case_info_08282018` with CPDB tables such as `data_allegation`, `data_allegationcategory`, `data_officer`, etc and used Trifacta to find the mapping and store in two tables: `allegation_mapping_old_and_new`.
 
+## Disclaimer
+After returning to these queries, we noticed that 
+
 ## Loading the required data
 
 ### Import old data set (Instructions)
