@@ -11,5 +11,10 @@ Here's another example to clarify this "mapping" idea: In the mapping table we s
 
 To create this mapping, we joined case_info_08282018 with CPDB tables such as data_allegation, data_allegationcategory, data_officer.
 
+## Conclusion
+We learned a lot in this project. Not only did we learn new tools and analytical methods, but we learned a lot about the Chicago Police and the CPDP project. A large percentage of allegations have their category strings changed (in our estimation, about ⅓). Most of the changes are benign, but there is a subset of allegations that change to a category that is completely different. There are others that changed to something much less severe. Why is this? Are some of these clerical errors? Is this a technique the Department uses to mask the severity of certain allegations? 
+We noticed that “Miscellaneous” is used a catch-all term. There are some very serious allegations that are being defined as “Miscellaneous.” The term is vague and non-descriptive and also masks the severity of certain allegations. Another common cover is “Seat Belts.” This category is used in CPDB often when the previous allegation category is completely unrelated. 
+In closing, we believe we have just scratched the surface and we hope that our work is a baseline for further investigation. Hopefully those with more knowledge about the project can read our analysis and either make confirmations, or come up with new questions that can be answered using our data and analysis.
+
 ## Future Work
 In each checkpoint, we mention ways to expand on the questions we asked for the analysis. Overall, the most promising future analysis would be integrating the [Severity Analysis](https://docs.google.com/spreadsheets/d/1b408GPeKjiK3ZcqWACDNK19JMKTOBbPHGPO25HNHM6s/edit#gid=0) with our mapping data. As opposed to doing sentiment analysis, we could truly see if allegations were changed to a category that is less severe. This would allow the Invisible Institute to have an even smaller subset of allegations where the categories changed, ones in which the severity of the allegation was altered. 
