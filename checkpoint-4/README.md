@@ -1,4 +1,4 @@
-# Checkpoint 4
+# Checkpoint 4 - Graph Analytics
 
 ## Project Theme Summary
 Our theme is about looking at how the allegation categories have changed over time, using older data provided to us by the Invisible Institute. A step we decided to take recently is to see for a given allegation category, what is the most common new category name it has in CPDB? In CP2, we defined the "mapping" (`allegation_mapping_boolean`) using this most common idea. If this field is **false**, we assume the mapping is violated and that something fishy may be going on with this allegation. This is not always the case, but we have observed odd changes more often using this technique. One example of an allegation being changed to something completely different: "Choked" => "Telephone / Attorney / Relative Priv."
