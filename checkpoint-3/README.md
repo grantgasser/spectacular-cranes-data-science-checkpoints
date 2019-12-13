@@ -1,4 +1,4 @@
-# Checkpoint 3 - Data Integration (`Arrests` data)
+# Checkpoint 3 - Data Integration
 
 ## Project Theme Summary
 Our theme is about looking at how the allegation categories have changed over time from previous Chicago Police databases. For now, we are only looking at one old table: `case_info_08282018`. We compare old allegation data (not inclduded in CPDB) with the allegation data found in CPDB. A step we decided to take recently is to see for a given allegation category for a record in the old dataset, what is the most common new category name it has in CPDB? In CP2, we defined the "mapping" using this most common idea. If we see a record where the mapping is violated (the new category name is not what is usually most common), then we may have some information here. This could reveal some foul play such as changing the allegation category to something less "severe" or something completely unrelated. 
