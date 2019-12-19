@@ -1,5 +1,5 @@
 # Spectacular Cranes - Data Science Seminar Checkpoints
-Here we host the code base and answers for the checkpoints completed as part of Northwestern's Data Science Seminar Course and the collaboration with the Invsible Institute.
+Here we host the questions and answers for the checkpoints completed as part of Northwestern's Data Science Seminar Course in collaboration with the [Invsible Institute](https://invisible.institute/police-data).
 
 ## Background
 [Motivation](https://invisible.institute/police-data/)
