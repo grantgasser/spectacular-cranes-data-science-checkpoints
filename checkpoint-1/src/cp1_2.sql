@@ -2,7 +2,6 @@
 -- Which allegations have changed?
 -- Time permitting: What categories of allegations are changed the most?
 
-
 select current_category as old_category_desc, current_category_type as old_category, 
 category as current_category from data_allegation da, case_info_08282018 ca, 
 data_officerallegation doa, data_allegationcategory dac
