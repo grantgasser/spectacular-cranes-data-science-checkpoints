@@ -9,7 +9,7 @@ Our theme is about looking at how the allegation categories have changed over ti
 
 Here's another example to clarify this "mapping" idea: In the mapping table we saw that "Illegal Arrest / False Arrest" from the old data maps to "Illegal Arrest / False Arrest" in the new data 98.6% of the time, it is safe to say this is the "true" mapping. Thus, any allegation in the mapping table with an old_category of "Illegal Arrest / False Arrest" and new_allegation_name as "Illegal Arrest / False Arrest" would have a true in the allegation_mapping_boolean field. If the new_allegation_name was different, it would have false in the boolean field and we would say that it violates the mapping. For example, there are a few records where "Illegal Arrest / False Arrest" has changed to "Use of Profanity," a seemingly unrelated and much less severe category, which might indicate something fishy is going on.
 
-To create this mapping, we joined case_info_08282018 with CPDB tables such as data_allegation, data_allegationcategory, data_officer.
+To create this mapping, we `joined case_info_08282018` with CPDB tables such as `data_allegation`, `data_allegationcategory`, `data_officer`.
 
 ## Conclusion
 We learned a lot in this project. Not only did we learn new tools and analytical methods, but we learned a lot about the Chicago Police and the CPDP project. A large percentage of allegations have their category strings changed (in our estimation, about ⅓). Most of the changes are benign, but there is a subset of allegations that change to a category that is completely different. There are others that changed to something much less severe. Why is this? Are some of these clerical errors? Is this a technique the Department uses to mask the severity of certain allegations? 
