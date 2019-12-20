@@ -1,6 +1,11 @@
 # Spectacular Cranes - Data Science Seminar Checkpoints
 Here we host the questions and answers for the checkpoints completed as part of Northwestern's Data Science Seminar Course in collaboration with the [Invsible Institute](https://invisible.institute/police-data).
 
+## Team Members
+[Grant Gasser](https://www.linkedin.com/in/grantgasser/)
+[Sundaram Thevar](https://www.linkedin.com/in/sundaram30/)
+Kartik Kesavabhotla
+
 ## Background
 [Motivation](https://invisible.institute/police-data/)
 
