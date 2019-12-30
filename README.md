@@ -15,6 +15,7 @@ Here we host the questions and answers for the checkpoints completed as part of 
 * D3js
 * Trifacta
 * Databricks
+* graphframes
 * scikit-learn
 * nltk
 
