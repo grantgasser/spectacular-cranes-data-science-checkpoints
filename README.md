@@ -1,6 +1,6 @@
 # Contribution to Citizen's Police Data Project 
 ### In Collaboration with Chicago's Invisible Institute
-Here we host the questions and answers for the checkpoints completed as part of Northwestern's Data Science Seminar Course in collaboration with the [Invsible Institute](https://invisible.institute/police-data).
+Here we host the questions and answers for the checkpoints completed as part of Northwestern's Data Science Seminar Course in collaboration with the [Invisible Institute](https://invisible.institute/police-data).
 
 ## Team Members
 * [Grant Gasser](https://www.linkedin.com/in/grantgasser/)
